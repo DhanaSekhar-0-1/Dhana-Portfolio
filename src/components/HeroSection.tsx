@@ -8,14 +8,14 @@ const HeroSection = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
     link.href = '/resume.pdf'; // You'll need to upload your resume PDF to the public folder
-    link.download = 'Dhana_Sekhar_Dandugula_Resume.pdf';
+    link.download = 'Dhana_Sekhar_Dandugula.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   const handleLinkedInClick = () => {
-    window.open("https://www.linkedin.com/in/dhana-sekhar-dandugula-b0388225b", "_blank");
+    window.open("https://linkedin.com/in/dhana-sekhar-dandugula", "_blank");
   };
 
   const handleSendMail = () => {

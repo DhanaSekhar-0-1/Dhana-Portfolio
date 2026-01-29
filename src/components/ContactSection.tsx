@@ -9,7 +9,7 @@ const ContactSection = () => {
   };
 
   const handleLinkedInClick = () => {
-    window.open("https://linkedin.com/in/dhana-sekhar-dandugula", "_blank");
+    window.open("https://linkedin.com/in/dhana-sekhar-dandugula-b0388225b", "_blank");
   };
 
   return (

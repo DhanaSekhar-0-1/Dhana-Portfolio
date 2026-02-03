@@ -3,34 +3,46 @@ import { Card } from "@/components/ui/card";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 px-6">
-      <div className="container mx-auto max-w-4xl">
-        <h2 className="text-4xl md:text-5xl font-light mb-16 text-center tracking-tight">
+    <section className="py-20 px-6 bg-background">
+      <div className="container mx-auto max-w-5xl">
+        <h2 className="text-3xl md:text-4xl font-light mb-10 text-center">
           About Me
         </h2>
-        <Card className="p-8 md:p-12 hover:shadow-lg transition-shadow duration-300">
-          <div className="prose prose-lg max-w-none">
-            <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-              I'm a certified Pega CSSA with a passion for transforming complex business 
-              challenges into elegant, automated solutions. My expertise spans across 
-              low-code platforms, Generative AI, and Natural Language Processing.
-            </p>
-            <p className="text-lg leading-relaxed text-muted-foreground mb-6">
-              With years of experience in enterprise automation, I've helped organizations 
-              streamline their processes while maintaining the human touch that makes 
-              technology truly meaningful. I believe in building systems that don't just 
-              work—they inspire.
-            </p>
-            <p className="text-lg leading-relaxed text-muted-foreground">
-              When I'm not architecting solutions, you'll find me exploring the latest 
-              developments in AI, mentoring fellow developers, or contributing to 
-              open-source projects that push the boundaries of what's possible.
-            </p>
-          </div>
-        </Card>
+
+        <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+          <p>
+            I am an AI/ML Engineer with hands-on experience in designing,
+            building, and deploying real-world machine learning systems
+            and AI-powered applications. My work focuses on transforming
+            complex business problems into scalable, data-driven solutions.
+          </p>
+
+          <p>
+            Alongside engineering roles, I actively deliver freelance
+            projects where I own the complete lifecycle — from requirement
+            analysis and model development to deployment and optimization.
+            This experience has strengthened my problem-solving mindset,
+            client communication, and delivery accountability.
+          </p>
+
+          <p>
+            I am also a Certified Pega CSA and CSSA Architect, with strong
+            expertise in CRM platforms, enterprise workflows, and decision
+            automation. This enables me to integrate AI systems with
+            enterprise-grade architectures, ensuring scalability,
+            reliability, and long-term business value.
+          </p>
+
+          <p>
+            I am seeking opportunities as an AI/ML Engineer, AI Engineer,
+            or related role where I can contribute to building intelligent,
+            production-ready systems that create measurable impact.
+          </p>
+        </div>
       </div>
     </section>
   );
 };
 
 export default AboutSection;
+

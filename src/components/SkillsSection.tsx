@@ -1,52 +1,77 @@
 
 import { Card } from "@/components/ui/card";
 
-const SkillsSection = () => {
-  const skills = [
-    {
-      category: "Low-Code Platforms",
-      items: ["Pega PRPC", "Pega Marketing", "Pega Customer Service", "Decision Management"]
-    },
-    {
-      category: "AI & Machine Learning",
-      items: ["Generative AI", "Natural Language Processing", "Machine Learning", "AI Ethics"]
-    },
-    {
-      category: "Architecture & Design",
-      items: ["Enterprise Architecture", "System Design", "API Design", "Microservices"]
-    },
-    {
-      category: "Technologies",
-      items: ["Java", "Python", "REST APIs", "Cloud Platforms", "DevOps"]
-    }
-  ];
+const skillsData = {
+  "Artificial Intelligence & Machine Learning": [
+    "Machine Learning",
+    "Deep Learning",
+    "Natural Language Processing (NLP)",
+    "Computer Vision",
+    "Predictive Modeling",
+    "Model Evaluation & Optimization"
+  ],
 
+  "Programming & Data": [
+    "Python",
+    "Data Analysis",
+    "Pandas",
+    "NumPy",
+    "Scikit-learn"
+  ],
+
+  "AI Application Development": [
+    "AI-powered Web Applications",
+    "Model Deployment",
+    "REST API Integration",
+    "Automation Systems"
+  ],
+
+  "Enterprise & CRM": [
+    "Pega Platform",
+    "Pega CSA",
+    "Pega CSSA",
+    "CRM Architecture",
+    "Decisioning & Workflow Automation"
+  ],
+
+  "Professional Strengths": [
+    "Freelance Project Delivery",
+    "End-to-End Ownership",
+    "Client Communication",
+    "Problem Solving",
+    "System Design"
+  ]
+};
+
+const SkillsSection = () => {
   return (
-    <section id="skills" className="py-24 px-6 bg-muted/30">
+    <section className="py-20 px-6 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl md:text-5xl font-light mb-16 text-center tracking-tight">
-          Expertise
+        <h2 className="text-3xl md:text-4xl font-light mb-12 text-center">
+          Skills & Expertise
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {skills.map((skill, index) => (
-            <Card
-              key={index}
-              className="p-6 hover:shadow-lg transition-all duration-300 hover:scale-105"
+
+        <div className="grid gap-10 md:grid-cols-2">
+          {Object.entries(skillsData).map(([category, skills]) => (
+            <div
+              key={category}
+              className="border rounded-xl p-6 bg-background hover:shadow-lg transition"
             >
-              <h3 className="text-xl font-medium mb-4 text-foreground">
-                {skill.category}
+              <h3 className="text-lg font-medium mb-4">
+                {category}
               </h3>
+
               <div className="flex flex-wrap gap-2">
-                {skill.items.map((item, itemIndex) => (
+                {skills.map((skill) => (
                   <span
-                    key={itemIndex}
-                    className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium"
+                    key={skill}
+                    className="text-sm px-3 py-1 rounded-full bg-primary/10 text-primary"
                   >
-                    {item}
+                    {skill}
                   </span>
                 ))}
               </div>
-            </Card>
+            </div>
           ))}
         </div>
       </div>

@@ -26,21 +26,28 @@ const HeroSection = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="animate-fade-in grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-          {/* Profile Image */}
-          <div className="flex justify-center md:justify-start">
-            <Avatar className="h-44 w-44 md:h-52 md:w-52 ring-4 ring-primary/10">
+          {/* LEFT: Profile + Description */}
+          <div className="flex flex-col items-center md:items-start">
+            <Avatar className="h-32 w-32 md:h-36 md:w-36 ring-4 ring-primary/10">
               <AvatarImage
                 src="/images/dhanush.jpg"
                 alt="Dhanush – AI/ML Engineer"
                 className="object-cover"
               />
-              <AvatarFallback className="text-4xl font-semibold">
+              <AvatarFallback className="text-3xl font-semibold">
                 DS
               </AvatarFallback>
             </Avatar>
+
+            {/* Description under profile */}
+            <p className="mt-6 text-base md:text-lg text-muted-foreground text-center md:text-left max-w-sm leading-relaxed">
+              I design and deploy real-world machine learning systems,
+              build AI-powered web applications, and deliver freelance
+              solutions with enterprise-grade architecture.
+            </p>
           </div>
 
-          {/* Content */}
+          {/* RIGHT: Main Content */}
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-light tracking-tight mb-4">
               Hi, I’m <span className="font-medium">Dhanush</span>
@@ -50,20 +57,13 @@ const HeroSection = () => {
               AI/ML Engineer · Freelance Consultant · Pega CSA & CSSA Architect
             </p>
 
-            {/* Availability Badge */}
+            {/* Availability */}
             <div className="mb-6 flex justify-center md:justify-start">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full 
                                bg-green-500/10 text-green-600 text-sm font-medium">
                 ● Available Immediately (Full-time / Freelance)
               </span>
             </div>
-
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-              I design and deploy real-world machine learning systems,
-              build AI-powered web applications, deliver freelance
-              solutions end-to-end, and architect scalable enterprise
-              CRM platforms using Pega.
-            </p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">

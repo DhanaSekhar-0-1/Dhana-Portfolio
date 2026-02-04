@@ -18,7 +18,7 @@ const HeroSection = () => {
 
   const handleSendMail = () => {
     window.location.href =
-      "mailto:suryasarath252@gmail.com?subject=AI/ML%20Opportunity&body=Hi%20Dhanush,%0D%0A%0D%0AI%20reviewed%20your%20portfolio%20and%20would%20like%20to%20connect.";
+      "mailto:suryasarath252@gmail.com?subject=AI/ML%20Opportunity&body=Hi%20Dhana,%0D%0A%0D%0AI%20reviewed%20your%20portfolio%20and%20would%20like%20to%20connect.";
   };
 
   return (
@@ -30,8 +30,8 @@ const HeroSection = () => {
           <div className="flex flex-col items-center md:items-start">
             <Avatar className="h-32 w-32 md:h-36 md:w-36 ring-4 ring-primary/10">
               <AvatarImage
-                src="/images/dhanush.jpg"
-                alt="Dhanush – AI/ML Engineer"
+                src="/images/dhanush_pic.png"
+                alt="Dhana – AI/ML Engineer"
                 className="object-cover"
               />
               <AvatarFallback className="text-3xl font-semibold">
@@ -50,7 +50,7 @@ const HeroSection = () => {
           {/* RIGHT: Main Content */}
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-light tracking-tight mb-4">
-              Hi, I’m <span className="font-medium">Dhanush</span>
+              Hi, I’m <span className="font-medium">Dhana Sekhar Dandugula</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-3">

@@ -1,4 +1,4 @@
-import { Linkedin, Briefcase } from "lucide-react";
+import { Linkedin, Briefcase, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -29,8 +29,8 @@ const ContactSection = () => {
             enterprise CRM platforms, I’d be happy to connect.
           </p>
 
-          {/* ✅ CENTERED LINKEDIN BUTTON */}
-          <div className="flex justify-center">
+          {/* LinkedIn Button */}
+          <div className="flex justify-center mb-8">
             <Button
               variant="outline"
               size="lg"
@@ -40,6 +40,12 @@ const ContactSection = () => {
               <Linkedin className="mr-2 h-5 w-5" />
               Connect on LinkedIn
             </Button>
+          </div>
+
+          {/* Email Display */}
+          <div className="flex justify-center items-center gap-2 text-muted-foreground text-base">
+            <Mail className="h-4 w-4" />
+            <span>suryasarath252@gmail.com</span>
           </div>
 
           <div className="mt-10 pt-8 border-t border-border/50">

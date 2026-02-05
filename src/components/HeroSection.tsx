@@ -16,11 +16,6 @@ const HeroSection = () => {
     );
   };
 
-  const handleSendMail = () => {
-    window.location.href =
-      "mailto:suryasarath252@gmail.com?subject=AI/ML%20Opportunity&body=Hi%20Dhana,%0D%0A%0D%0AI%20reviewed%20your%20portfolio%20and%20would%20like%20to%20connect.";
-  };
-
   return (
     <section className="min-h-screen flex items-center justify-center px-6 pt-24">
       <div className="container mx-auto max-w-6xl">
@@ -39,7 +34,6 @@ const HeroSection = () => {
               </AvatarFallback>
             </Avatar>
 
-            {/* Description under profile */}
             <p className="mt-6 text-base md:text-lg text-muted-foreground text-center md:text-left max-w-sm leading-relaxed">
               I design and deploy real-world machine learning systems,
               build AI-powered web applications, and deliver freelance
@@ -57,7 +51,6 @@ const HeroSection = () => {
               AI/ML Engineer · Freelance Consultant · Pega CSA & CSSA Architect
             </p>
 
-            {/* Availability */}
             <div className="mb-6 flex justify-center md:justify-start">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full 
                                bg-green-500/10 text-green-600 text-sm font-medium">
@@ -86,14 +79,19 @@ const HeroSection = () => {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
 
+              {/* ✅ FIXED EMAIL BUTTON */}
               <Button
                 variant="ghost"
                 size="lg"
                 className="px-6 py-3 text-base"
-                onClick={handleSendMail}
+                asChild
               >
-                <Mail className="mr-2 h-4 w-4" />
-                Email Me
+                <a
+                  href="mailto:suryasarath252@gmail.com?subject=AI/ML%20Opportunity&body=Hi%20Dhana,%0D%0A%0D%0AI%20reviewed%20your%20portfolio%20and%20would%20like%20to%20connect."
+                >
+                  <Mail className="mr-2 h-4 w-4" />
+                  Email Me
+                </a>
               </Button>
             </div>
           </div>

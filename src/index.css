@@ -1,12 +1,11 @@
+/* Import Inter font for Swiss-style typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap');
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Import Inter font for Swiss-style typography */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap');
-
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
 
 @layer base {
   :root {

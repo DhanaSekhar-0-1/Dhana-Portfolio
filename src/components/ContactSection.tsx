@@ -1,13 +1,8 @@
-import { Mail, Linkedin, Briefcase } from "lucide-react";
+import { Linkedin, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 const ContactSection = () => {
-  const handleSendMail = () => {
-    window.location.href =
-      "mailto:suryasarath252@gmail.com?subject=AI/ML%20Opportunity&body=Hi%20Dhanush,%0D%0A%0D%0AI%20reviewed%20your%20portfolio%20and%20would%20like%20to%20connect%20regarding%20an%20opportunity.";
-  };
-
   const handleLinkedInClick = () => {
     window.open(
       "https://linkedin.com/in/dhana-sekhar-dandugula",
@@ -34,24 +29,16 @@ const ContactSection = () => {
             enterprise CRM platforms, I’d be happy to connect.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              size="lg"
-              className="group px-8 py-3 text-base hover:scale-105 transition"
-              onClick={handleSendMail}
-            >
-              <Mail className="mr-2 h-5 w-5" />
-              Email Me
-            </Button>
-
+          {/* ✅ CENTERED LINKEDIN BUTTON */}
+          <div className="flex justify-center">
             <Button
               variant="outline"
               size="lg"
-              className="group px-8 py-3 text-base hover:scale-105 transition"
+              className="group px-10 py-3 text-base hover:scale-105 transition"
               onClick={handleLinkedInClick}
             >
               <Linkedin className="mr-2 h-5 w-5" />
-              LinkedIn
+              Connect on LinkedIn
             </Button>
           </div>
 
@@ -59,11 +46,6 @@ const ContactSection = () => {
             <p className="text-muted-foreground flex items-center justify-center gap-2">
               <Briefcase className="h-4 w-4" />
               Open to Full-Time · Freelance · Consulting
-            </p>
-
-            <p className="text-muted-foreground mt-2">
-              <Mail className="inline h-4 w-4 mr-2" />
-              suryasarath252@gmail.com
             </p>
           </div>
         </Card>
